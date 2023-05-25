@@ -57,4 +57,4 @@ python3 train.py --dataset DATASET
 - For vocoder : **HiFi-GAN**.
 
 ## Acknowledgement
-We borrow the code in https://github.com/keonlee9420/Comprehensive-Transformer-TTS repositorie. We thank the author for open-sourcing their code.
+We borrow the code in https://github.com/keonlee9420/Comprehensive-Transformer-TTS  repository. We thank the author for open-sourcing their code.
