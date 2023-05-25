@@ -11,26 +11,6 @@ You can install the Python dependencies with
 ```
 pip3 install -r requirements.txt
 ```
-Also, `Dockerfile` is provided for `Docker` users.
-
-## Inference
-
-For a **multi-speaker TTS**, run
-```
-python3 synthesize.py --text "YOUR_DESIRED_TEXT" --speaker_id SPEAKER_ID --restore_step RESTORE_STEP --mode single --dataset DATASET
-```
-
-The dictionary of learned speakers can be found at `preprocessed_data/DATASET/speakers.json`, and the generated utterances will be put in `output/result/`.
-
-
-## Batch Inference
-Batch inference is also supported, try
-
-```
-python3 synthesize.py --source preprocessed_data/DATASET/val.txt --restore_step RESTORE_STEP --mode batch --dataset DATASET
-```
-to synthesize all utterances in `preprocessed_data/DATASET/val.txt`.
-
 
 # Training
 
@@ -55,10 +35,25 @@ Train your model with
 ```
 python3 train.py --dataset DATASET
 ```
-
-
-
 - For vocoder : **HiFi-GAN**.
+
+## Inference
+
+For a **multi-speaker TTS**, run
+```
+python3 synthesize.py --text "YOUR_DESIRED_TEXT" --speaker_id SPEAKER_ID --restore_step RESTORE_STEP --mode single --dataset DATASET
+```
+
+The dictionary of learned speakers can be found at `preprocessed_data/DATASET/speakers.json`, and the generated utterances will be put in `output/result/`.
+
+
+## Batch Inference
+Batch inference is also supported, try
+
+```
+python3 synthesize.py --source preprocessed_data/DATASET/val.txt --restore_step RESTORE_STEP --mode batch --dataset DATASET
+```
+to synthesize all utterances in `preprocessed_data/DATASET/val.txt`.
 
 ## Acknowledgement
 We borrow the code in https://github.com/keonlee9420/Comprehensive-Transformer-TTS  repository. We thank the author for open-sourcing their code.
