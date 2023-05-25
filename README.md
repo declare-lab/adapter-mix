@@ -4,7 +4,7 @@
 There are significant challenges for speaker adaptation in text-to-speech for languages that are not widely spoken or for speakers with accents or dialects that are not well-represented in the training data. To address this issue, we propose the use of the "mixture of adapters" method. This approach involves adding multiple adapters within a backbone-model layer to learn the unique characteristics of different speakers. Our approach outperforms the baseline, with a noticeable improvement of 5\% observed in speaker preference tests when using only one minute of data for each new speaker. Moreover, following the adapter paradigm, we fine-tune only the adapter parameters (11\% of the total model parameters). This is a significant achievement in parameter-efficient speaker adaptation, and one of the first models of its kind. Overall, our proposed approach offers a promising solution to the speech synthesis techniques, particularly for adapting to speakers from diverse backgrounds.
 
 <p align="center">
-<img  width="512" alt="moa-abhi" src="https://github.com/declare-lab/adapter-mix/assets/35449937/eaf6dd5b-fd16-48c3-bedd-c4f84482eea7">
+<img  width="512" alt="moa-abhi" src="https://github.com/declare-lab/adapter-mix/moa.png">
  </p>
  <p>
     <em> The MoA module comprises N residual adapters. Every adapter chooses k closest tokens and processes it. The same token can be processed by multiple adapters. The outputs of the adapters are combined}. Additionally, the architecture of the standard residual adapter is illustrated on the right in the same diagram.</em>
