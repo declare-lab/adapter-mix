@@ -5,6 +5,7 @@ There are significant challenges for speaker adaptation in text-to-speech for la
 
 <p align="center">
 <img  width="512" alt="moa-abhi" src="https://github.com/declare-lab/adapter-mix/assets/35449937/eaf6dd5b-fd16-48c3-bedd-c4f84482eea7">
+ <em>image_caption</em>
  </p>
 
 
