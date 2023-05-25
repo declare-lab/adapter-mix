@@ -56,10 +56,5 @@ python3 train.py --dataset DATASET
 
 - For vocoder : **HiFi-GAN**.
 
-# Citation
-
-Please cite this repository by the "[Cite this repository](https://github.blog/2021-08-19-enhanced-support-citations-github/)" of **About** section (top right of the main page).
-
-# References
-- [ming024's FastSpeech2](https://github.com/ming024/FastSpeech2)
--[Comprehensive-Transformer-TTS](https://github.com/keonlee9420/Comprehensive-Transformer-TTS/)
+## Acknowledgement
+We borrow the code in https://github.com/keonlee9420/Comprehensive-Transformer-TTS repositorie. We thank the author for open-sourcing their code.
