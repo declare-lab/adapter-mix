@@ -3,9 +3,6 @@
 ## Abstract
 There are significant challenges for speaker adaptation in text-to-speech for languages that are not widely spoken or for speakers with accents or dialects that are not well-represented in the training data. To address this issue, we propose the use of the "mixture of adapters" method. This approach involves adding multiple adapters within a backbone-model layer to learn the unique characteristics of different speakers. Our approach outperforms the baseline, with a noticeable improvement of 5\% observed in speaker preference tests when using only one minute of data for each new speaker. Moreover, following the adapter paradigm, we fine-tune only the adapter parameters (11\% of the total model parameters). This is a significant achievement in parameter-efficient speaker adaptation, and one of the first models of its kind. Overall, our proposed approach offers a promising solution to the speech synthesis techniques, particularly for adapting to speakers from diverse backgrounds.
 
-
-***DATASET*** refers to the names of datasets such as `LTS` and `VCTK` in the following documents.
-
 ## Dependencies
 You can install the Python dependencies with
 ```
@@ -21,6 +18,7 @@ The supported datasets are
 - [VCTK](https://datashare.ed.ac.uk/handle/10283/3443): The CSTR VCTK Corpus includes speech data uttered by 110 English speakers (**multi-speaker TTS**) with various accents. Each speaker reads out about 400 sentences, which were selected from a newspaper, the rainbow passage and an elicitation paragraph used for the speech accent archive.
 
 ## Preprocessing
+***DATASET*** refers to the names of datasets such as `LTS` and `VCTK` in the following documents.
 - Run 
   ```
   python3 prepare_align.py --dataset DATASET
