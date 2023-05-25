@@ -7,7 +7,7 @@ There are significant challenges for speaker adaptation in text-to-speech for la
 <img  width="512" alt="moa-abhi" src="https://github.com/declare-lab/adapter-mix/assets/35449937/eaf6dd5b-fd16-48c3-bedd-c4f84482eea7">
  </p>
  <p>
-    <em>image_caption</em>
+    <em> The MoA module comprises N residual adapters. Every adapter chooses k closest tokens and processes it. The same token can be processed by multiple adapters. The outputs of the adapters are combined}. Additionally, the architecture of the standard residual adapter is illustrated on the right in the same diagram.</em>
 </p>
 
 
